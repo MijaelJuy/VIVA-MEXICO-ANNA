@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#071b12" />
+  <meta name="description" content="Un pequeño detalle para Anna, desde Perú, para celebrar con cariño sus raíces mexicanas." />
+  <title>Viva México, y viva tú — Para Anna</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="fireworks" aria-hidden="true"></canvas>
+
+  <div class="intro" id="intro" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+    <div class="intro__glow intro__glow--green"></div>
+    <div class="intro__glow intro__glow--red"></div>
+    <div class="intro__content">
+      <p class="eyebrow">15 · 16 de septiembre</p>
+      <div class="tiny-flag" aria-hidden="true"><span></span><span></span><span></span></div>
+      <h1 id="introTitle">Para Anna</h1>
+      <p class="intro__subtitle">Desde Perú, con ganas de conocer y querer un poquito más el lugar del que vienes.</p>
+      <button class="primary-btn" id="enterBtn">Abrir este detalle <span>→</span></button>
+      <p class="intro__hint">Haz clic con sonido activado ✦</p>
+    </div>
+  </div>
+
+  <div class="page" id="page" aria-hidden="true">
+    <header class="hero" id="inicio">
+      <nav class="nav shell">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand__mark">A</span>
+          <span>Para Anna</span>
+        </a>
+        <div class="nav__right">
+          <span class="peru-mexico"><span>PER</span><i></i><span>MEX</span></span>
+          <button class="sound-btn" id="soundBtn" aria-label="Activar o desactivar sonido" title="Sonido">
+            <span id="soundIcon">♪</span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="papel" aria-hidden="true">
+        <span>✦</span><span>◆</span><span>✦</span><span>◆</span><span>✦</span><span>◆</span><span>✦</span><span>◆</span><span>✦</span>
+      </div>
+
+      <div class="hero__content shell">
+        <p class="eyebrow reveal">Un peruano celebrando contigo</p>
+        <h2 class="hero__title reveal">Viva México,<br><em>y viva tú.</em></h2>
+        <p class="hero__lead reveal">
+          Yo no crecí con estas fechas ni con tus tradiciones, pero desde que eres parte de mi vida,
+          también quiero aprender a querer aquello que forma parte de ti.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="primary-btn" href="#carta">Leer mi carta <span>↓</span></a>
+          <button class="ghost-btn" id="gritoBtn">Dar nuestro pequeño “¡Viva!”</button>
+        </div>
+      </div>
+
+      <div class="hero__date reveal">
+        <span>15</span>
+        <div>
+          <small>septiembre</small>
+          <strong>El Grito</strong>
+        </div>
+        <b>→</b>
+        <span>16</span>
+        <div>
+          <small>septiembre</small>
+          <strong>Independencia</strong>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true"><span></span></div>
+    </header>
+
+    <main>
+      <section class="letter section" id="carta">
+        <div class="shell narrow">
+          <div class="section-heading reveal">
+            <p class="eyebrow">No quiero fingir que lo sé todo</p>
+            <h3>Quiero conocer <em>tu México</em>.</h3>
+          </div>
+
+          <article class="letter-card reveal">
+            <span class="letter-card__quote">“</span>
+            <p>Anna, sé que México no es solo un país en un mapa para ti. Es tu historia, tus recuerdos, tu familia, tus sabores y esa forma tan bonita que tienes de sentirte orgullosa de tus raíces.</p>
+            <p>Yo soy de Perú y todavía tengo muchísimo por aprender de tu cultura. No conozco todas sus costumbres, ni todas sus historias, ni todo lo que significa crecer allá. Pero sí sé algo: <strong>si es importante para ti, quiero que también sea importante para mí.</strong></p>
+            <p>Quiero escucharte hablar de tu tierra, conocer lo que te hace sentir en casa, probar lo que amas, aprender las cosas que para ti son normales y para mí serán nuevas, y algún día vivir estas fechas a tu lado.</p>
+            <p class="letter-card__closing">Hoy no celebro México porque pretenda conocerlo todo. Lo celebro porque te amo a ti, y quiero aprender a querer también cada pedacito de donde vienes.</p>
+            <div class="signature">
+              <span>Con amor,</span>
+              <strong>tu peruano 🇵🇪</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="roots section">
+        <div class="shell">
+          <div class="section-heading section-heading--center reveal">
+            <p class="eyebrow">Cosas que ya me has enseñado</p>
+            <h3>Un poquito de ti,<br><em>un poquito de México.</em></h3>
+          </div>
+
+          <div class="cards-grid">
+            <article class="culture-card culture-card--pozole reveal">
+              <div class="culture-card__number">01</div>
+              <div class="culture-card__icon">♨</div>
+              <p class="culture-card__kicker">El favorito indiscutible</p>
+              <h4>Pozole a la olla</h4>
+              <p>Ya quedó guardado: si algún día quiero ganarme puntos, sé perfectamente cuál es el plato que tiene ventaja.</p>
+            </article>
+
+            <article class="culture-card culture-card--tacos reveal">
+              <div class="culture-card__number">02</div>
+              <div class="culture-card__icon">✦</div>
+              <p class="culture-card__kicker">Aparición especial</p>
+              <h4>Tacos al pastor</h4>
+              <p>No voy a decir que compiten con el pozole… pero ya entendí que merecen aparecer de vez en cuando.</p>
+            </article>
+
+            <article class="culture-card culture-card--avocado reveal">
+              <div class="culture-card__number">03</div>
+              <div class="culture-card__icon">◒</div>
+              <p class="culture-card__kicker">Debate internacional</p>
+              <h4>¿Palta o aguacate?</h4>
+              <p id="avocadoText">Yo digo <strong>palta</strong>, tú dices <strong>aguacate</strong>. La diplomacia Perú–México sigue negociando.</p>
+              <button class="mini-btn" id="avocadoBtn">Resolver el conflicto</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="discover section">
+        <div class="shell discover__layout">
+          <div class="discover__copy reveal">
+            <p class="eyebrow">Todavía me falta mucho</p>
+            <h3>Lo que quiero descubrir <em>contigo</em></h3>
+            <p>No quiero conocer México solo leyendo sobre él. Quiero conocerlo a través de tus historias, de tus recuerdos y de las cosas que tú elegirías mostrarme primero.</p>
+          </div>
+
+          <div class="discover__list">
+            <div class="discover-item reveal"><span>01</span><div><h4>Tu pueblo y tus lugares</h4><p>Los rincones que para ti tienen historia, aunque no aparezcan en una guía.</p></div></div>
+            <div class="discover-item reveal"><span>02</span><div><h4>Las tradiciones de tu familia</h4><p>Esas pequeñas costumbres que hacen que un lugar se sienta como casa.</p></div></div>
+            <div class="discover-item reveal"><span>03</span><div><h4>Más sabores</h4><p>Además del pozole y los tacos al pastor, quiero descubrir qué más merece un puesto en tu lista.</p></div></div>
+            <div class="discover-item reveal"><span>04</span><div><h4>Tu música y tus recuerdos</h4><p>Las canciones que te llevan a algún momento, lugar o persona.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="history-strip section">
+        <div class="shell history-strip__inner reveal">
+          <div class="history-strip__date">1810</div>
+          <div>
+            <p class="eyebrow">Una fecha que ahora quiero entender mejor</p>
+            <h3>Esta noche México da el Grito.<br>El 16 recuerda el inicio de su Independencia.</h3>
+            <p>Yo apenas estoy empezando a conocer todo lo que esta celebración significa. Y me gusta que una de las razones para aprenderlo seas tú.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="music section" id="musica">
+        <div class="shell">
+          <div class="section-heading section-heading--center reveal">
+            <p class="eyebrow">Y claro… con música</p>
+            <h3>Dos canciones que <em>sé que te gustan</em></h3>
+            <p class="section-subtitle">No podía hacer algo pensando en ti sin dejarles un espacio.</p>
+          </div>
+
+          <div class="music-grid">
+            <article class="music-card reveal" data-track-card>
+              <div class="music-card__visual music-card__visual--green">
+                <div class="vinyl-wrap">
+                  <span class="vinyl" aria-hidden="true"></span>
+                  <button class="track-play" type="button" aria-label="Reproducir un x100to">
+                    <span class="track-play__icon" aria-hidden="true">▶</span>
+                  </button>
+                </div>
+                <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <div class="music-card__body">
+                <p>Grupo Frontera · Bad Bunny</p>
+                <h4>un x100to</h4>
+                <div class="track-player">
+                  <input class="track-seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Posición de un x100to" />
+                  <div class="track-meta">
+                    <span class="track-status">Reproducir aquí</span>
+                    <span class="track-time">0:00 / 0:00</span>
+                  </div>
+                </div>
+                <audio class="track-audio" preload="metadata" src="assets/audio/UNX100TO.mp3"></audio>
+              </div>
+            </article>
+
+            <article class="music-card reveal" data-track-card>
+              <div class="music-card__visual music-card__visual--red">
+                <div class="vinyl-wrap">
+                  <span class="vinyl" aria-hidden="true"></span>
+                  <button class="track-play" type="button" aria-label="Reproducir COQUETA">
+                    <span class="track-play__icon" aria-hidden="true">▶</span>
+                  </button>
+                </div>
+                <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <div class="music-card__body">
+                <p>Grupo Frontera · Fuerza Regida</p>
+                <h4>COQUETA</h4>
+                <div class="track-player">
+                  <input class="track-seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Posición de COQUETA" />
+                  <div class="track-meta">
+                    <span class="track-status">Reproducir aquí</span>
+                    <span class="track-time">0:00 / 0:00</span>
+                  </div>
+                </div>
+                <audio class="track-audio" preload="metadata" src="assets/audio/COQUETA.mp3"></audio>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="finale section">
+        <div class="finale__glow finale__glow--green"></div>
+        <div class="finale__glow finale__glow--red"></div>
+        <div class="shell finale__content reveal">
+          <p class="eyebrow">De Perú para México, pero sobre todo para ti</p>
+          <h3>Que nunca te falte<br>el orgullo de tus raíces.</h3>
+          <p>Y que yo tenga siempre la curiosidad de seguir conociéndolas contigo.</p>
+          <button class="viva-btn" id="finalVivaBtn">
+            <span>¡Viva México!</span>
+            <small>y viva tú, Anna ♥</small>
+          </button>
+          <p class="finale__note">P. D. Lo del aguacate no significa que “palta” deje de existir. Tampoco hay que abusar del espíritu patriótico.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer__inner">
+        <span>Hecho con cariño para Anna</span>
+        <span>Perú <b>♥</b> México · 2026</span>
+      </div>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <div class="toast__flag"><span></span><span></span><span></span></div>
+    <div>
+      <strong>¡Viva México! 🇲🇽</strong>
+      <p>Y viva Anna, que me está enseñando a querer un poquito de su tierra.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
